@@ -15,178 +15,331 @@
   animation-name: kenburns;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-  animation-duration: 40s;
+  animation-duration: 76s;
   opacity: 1;
   transform: scale(1.2); }
   .slideshow-image:nth-child(1) {
     animation-name: kenburns-1;
-    z-index: 9; }
+    z-index: 18; }
   .slideshow-image:nth-child(2) {
     animation-name: kenburns-2;
-    z-index: 8; }
+    z-index: 17; }
   .slideshow-image:nth-child(3) {
     animation-name: kenburns-3;
-    z-index: 7; }
+    z-index: 16; }
   .slideshow-image:nth-child(4) {
     animation-name: kenburns-4;
-    z-index: 6; }
+    z-index: 15; }
   .slideshow-image:nth-child(5) {
     animation-name: kenburns-5;
-    z-index: 5; }
+    z-index: 14; }
   .slideshow-image:nth-child(6) {
     animation-name: kenburns-6;
-    z-index: 4; }
+    z-index: 13; }
   .slideshow-image:nth-child(7) {
     animation-name: kenburns-7;
-    z-index: 3; }
+    z-index: 12; }
   .slideshow-image:nth-child(8) {
     animation-name: kenburns-8;
-    z-index: 2; }
+    z-index: 11; }
   .slideshow-image:nth-child(9) {
     animation-name: kenburns-9;
-    z-index: 1; }
+    z-index: 10; }
   .slideshow-image:nth-child(10) {
     animation-name: kenburns-10;
+    z-index: 9; }
+  .slideshow-image:nth-child(11) {
+    animation-name: kenburns-11;
+    z-index: 8; }
+  .slideshow-image:nth-child(12) {
+    animation-name: kenburns-12;
+    z-index: 7; }
+  .slideshow-image:nth-child(13) {
+    animation-name: kenburns-13;
+    z-index: 6; }
+  .slideshow-image:nth-child(14) {
+    animation-name: kenburns-14;
+    z-index: 5; }
+  .slideshow-image:nth-child(15) {
+    animation-name: kenburns-15;
+    z-index: 4; }
+  .slideshow-image:nth-child(16) {
+    animation-name: kenburns-16;
+    z-index: 3; }
+  .slideshow-image:nth-child(17) {
+    animation-name: kenburns-17;
+    z-index: 2; }
+  .slideshow-image:nth-child(18) {
+    animation-name: kenburns-18;
+    z-index: 1; }
+  .slideshow-image:nth-child(19) {
+    animation-name: kenburns-19;
     z-index: 0; }
 
 @keyframes kenburns-1 {
   0% {
     opacity: 1;
     transform: scale(1.2); }
-  1.875% {
+  0.98684% {
     opacity: 1; }
-  8.125% {
+  4.27632% {
     opacity: 1; }
-  11.875% {
+  6.25% {
     opacity: 0;
     transform: scale(1); }
   100% {
     opacity: 0;
     transform: scale(1.2); }
-  98.125% {
+  99.01316% {
     opacity: 0;
     transform: scale(1.23158); }
   100% {
     opacity: 1; } }
 @keyframes kenburns-2 {
-  8.125% {
+  4.27632% {
     opacity: 1;
     transform: scale(1.2); }
-  11.875% {
+  6.25% {
     opacity: 1; }
-  18.125% {
+  9.53947% {
     opacity: 1; }
-  21.875% {
+  11.51316% {
     opacity: 0;
     transform: scale(1); }
   100% {
     opacity: 0;
     transform: scale(1.2); } }
 @keyframes kenburns-3 {
-  18.125% {
+  9.53947% {
     opacity: 1;
     transform: scale(1.2); }
-  21.875% {
+  11.51316% {
     opacity: 1; }
-  28.125% {
+  14.80263% {
     opacity: 1; }
-  31.875% {
+  16.77632% {
     opacity: 0;
     transform: scale(1); }
   100% {
     opacity: 0;
     transform: scale(1.2); } }
 @keyframes kenburns-4 {
-  28.125% {
+  14.80263% {
     opacity: 1;
     transform: scale(1.2); }
-  31.875% {
+  16.77632% {
     opacity: 1; }
-  38.125% {
+  20.06579% {
     opacity: 1; }
-  41.875% {
+  22.03947% {
     opacity: 0;
     transform: scale(1); }
   100% {
     opacity: 0;
     transform: scale(1.2); } }
 @keyframes kenburns-5 {
-  38.125% {
+  20.06579% {
     opacity: 1;
     transform: scale(1.2); }
-  41.875% {
+  22.03947% {
     opacity: 1; }
-  48.125% {
+  25.32895% {
     opacity: 1; }
-  51.875% {
+  27.30263% {
     opacity: 0;
     transform: scale(1); }
   100% {
     opacity: 0;
     transform: scale(1.2); } }
 @keyframes kenburns-6 {
-  48.125% {
+  25.32895% {
     opacity: 1;
     transform: scale(1.2); }
-  51.875% {
+  27.30263% {
     opacity: 1; }
-  58.125% {
+  30.59211% {
     opacity: 1; }
-  61.875% {
+  32.56579% {
     opacity: 0;
     transform: scale(1); }
   100% {
     opacity: 0;
     transform: scale(1.2); } }
 @keyframes kenburns-7 {
-  58.125% {
+  30.59211% {
     opacity: 1;
     transform: scale(1.2); }
-  61.875% {
+  32.56579% {
     opacity: 1; }
-  68.125% {
+  35.85526% {
     opacity: 1; }
-  71.875% {
+  37.82895% {
     opacity: 0;
     transform: scale(1); }
   100% {
     opacity: 0;
     transform: scale(1.2); } }
 @keyframes kenburns-8 {
-  68.125% {
+  35.85526% {
     opacity: 1;
     transform: scale(1.2); }
-  71.875% {
+  37.82895% {
     opacity: 1; }
-  78.125% {
+  41.11842% {
     opacity: 1; }
-  81.875% {
+  43.09211% {
     opacity: 0;
     transform: scale(1); }
   100% {
     opacity: 0;
     transform: scale(1.2); } }
 @keyframes kenburns-9 {
-  78.125% {
+  41.11842% {
     opacity: 1;
     transform: scale(1.2); }
-  81.875% {
+  43.09211% {
     opacity: 1; }
-  88.125% {
+  46.38158% {
     opacity: 1; }
-  91.875% {
+  48.35526% {
     opacity: 0;
     transform: scale(1); }
   100% {
     opacity: 0;
     transform: scale(1.2); } }
 @keyframes kenburns-10 {
-  88.125% {
+  46.38158% {
     opacity: 1;
     transform: scale(1.2); }
-  91.875% {
+  48.35526% {
     opacity: 1; }
-  98.125% {
+  51.64474% {
+    opacity: 1; }
+  53.61842% {
+    opacity: 0;
+    transform: scale(1); }
+  100% {
+    opacity: 0;
+    transform: scale(1.2); } }
+@keyframes kenburns-11 {
+  51.64474% {
+    opacity: 1;
+    transform: scale(1.2); }
+  53.61842% {
+    opacity: 1; }
+  56.90789% {
+    opacity: 1; }
+  58.88158% {
+    opacity: 0;
+    transform: scale(1); }
+  100% {
+    opacity: 0;
+    transform: scale(1.2); } }
+@keyframes kenburns-12 {
+  56.90789% {
+    opacity: 1;
+    transform: scale(1.2); }
+  58.88158% {
+    opacity: 1; }
+  62.17105% {
+    opacity: 1; }
+  64.14474% {
+    opacity: 0;
+    transform: scale(1); }
+  100% {
+    opacity: 0;
+    transform: scale(1.2); } }
+@keyframes kenburns-13 {
+  62.17105% {
+    opacity: 1;
+    transform: scale(1.2); }
+  64.14474% {
+    opacity: 1; }
+  67.43421% {
+    opacity: 1; }
+  69.40789% {
+    opacity: 0;
+    transform: scale(1); }
+  100% {
+    opacity: 0;
+    transform: scale(1.2); } }
+@keyframes kenburns-14 {
+  67.43421% {
+    opacity: 1;
+    transform: scale(1.2); }
+  69.40789% {
+    opacity: 1; }
+  72.69737% {
+    opacity: 1; }
+  74.67105% {
+    opacity: 0;
+    transform: scale(1); }
+  100% {
+    opacity: 0;
+    transform: scale(1.2); } }
+@keyframes kenburns-15 {
+  72.69737% {
+    opacity: 1;
+    transform: scale(1.2); }
+  74.67105% {
+    opacity: 1; }
+  77.96053% {
+    opacity: 1; }
+  79.93421% {
+    opacity: 0;
+    transform: scale(1); }
+  100% {
+    opacity: 0;
+    transform: scale(1.2); } }
+@keyframes kenburns-16 {
+  77.96053% {
+    opacity: 1;
+    transform: scale(1.2); }
+  79.93421% {
+    opacity: 1; }
+  83.22368% {
+    opacity: 1; }
+  85.19737% {
+    opacity: 0;
+    transform: scale(1); }
+  100% {
+    opacity: 0;
+    transform: scale(1.2); } }
+@keyframes kenburns-17 {
+  83.22368% {
+    opacity: 1;
+    transform: scale(1.2); }
+  85.19737% {
+    opacity: 1; }
+  88.48684% {
+    opacity: 1; }
+  90.46053% {
+    opacity: 0;
+    transform: scale(1); }
+  100% {
+    opacity: 0;
+    transform: scale(1.2); } }
+@keyframes kenburns-18 {
+  88.48684% {
+    opacity: 1;
+    transform: scale(1.2); }
+  90.46053% {
+    opacity: 1; }
+  93.75% {
+    opacity: 1; }
+  95.72368% {
+    opacity: 0;
+    transform: scale(1); }
+  100% {
+    opacity: 0;
+    transform: scale(1.2); } }
+@keyframes kenburns-19 {
+  93.75% {
+    opacity: 1;
+    transform: scale(1.2); }
+  95.72368% {
+    opacity: 1; }
+  99.01316% {
     opacity: 1; }
   100% {
     opacity: 0;
@@ -205,10 +358,17 @@ h1 {
   box-shadow: 0 1em 2em -1em rgba(0, 0, 0, 0.5);
   padding: 1em 2em;
   line-height: 1.5;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.25); }
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  padding-bottom: .5em; }
   h1 small {
     display: block;
     text-transform: lowercase;
     font-size: .7em; }
+    h1 small:first-child {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+      padding-bottom: .5em; }
+    h1 small:last-child {
+      border-top: 1px solid rgba(0, 0, 0, 0.25);
+      padding-top: .5em; }
 
 /*# sourceMappingURL=index.css.map */

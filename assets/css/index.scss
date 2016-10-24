@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 @import url("font-awesome.min.css");
-$items: 10;
+$items: 17;
 $animation-time: 4s;
 $transition-time: 1.5s;
 $scale: 20%;
@@ -90,10 +90,20 @@ h1 {
   padding: 1em 2em;
   line-height: 1.5;
   border-bottom: 1px solid rgba(0,0,0,.25);
+  padding-bottom: .5em;
 
   small {
     display: block;
     text-transform: lowercase;
     font-size: .7em;
+    &:first-child {
+      border-bottom: 1px solid rgba(0,0,0,.25);
+      padding-bottom: .5em;
+    }
+
+    &:last-child {
+      border-top: 1px solid rgba(0,0,0,.25);
+      padding-top: .5em;
+    }
   }
 }
