@@ -5,6 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
 	<link rel="stylesheet" href="/assets/css/index.css">
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript" src="/assets/js/smoothscroll.js"></script>
 	<link rel="icon" href="images/icon.png" sizes="32x32">
 </head>
 <body>
@@ -14,14 +16,15 @@
 	  <h2 class="f6 gray fw2 ttu tracked">Cal Poly - Boise, ID</h2>
 		<nav class="bt bb tc mw7 center mt4 gray">
 		  <div class="tc pb4 pt4">
-		    <a class="link dim gray f6 f5-ns dib mr3" href="#" title="Home">Home</a>
-		    <a class="link dim gray f6 f5-ns dib mr3" href="#" title="About">About</a>
-		    <a class="link dim gray f6 f5-ns dib mr3" href="#" title="Store">Projects</a>
-		    <a class="link dim gray f6 f5-ns dib" href="#" title="Contact">Contact</a>
+		    <a class="link dim gray f6 f5-ns dib mr3 smoothscroll" href="/" title="Home">Home</a>
+		    <a class="link dim gray f6 f5-ns dib mr3 smoothscroll" href="#aboutMe" title="About">About</a>
+		    <a class="link dim gray f6 f5-ns dib mr3 smoothscroll" href="#projects" title="Projects">Projects</a>
+		    <a class="link dim gray f6 f5-ns dib smoothscroll" href="#contactor" title="Contact">Contact</a>
 		  </div>
 		</nav>
 	</header>
 	<main>
+		<A NAME="aboutMe">
 		<article data-name="article-full-bleed-background">
 			<div class="cf" style="background: url(/assets/images/IMG_0674.JPG) no-repeat center center fixed; background-size: cover;">
 				<div class="fl pa4 pa4-ns bg-white black-70 measure-narrow f3">
@@ -54,6 +57,7 @@
 			</div>
 		</article>
 		<article class="pa3 pa5-ns">
+			<A NAME="projects">
 			<h1 class="f2 f-subheadline-ns mb4 tr dark-gray ttu">
 				Projects
 			</h1>
@@ -85,7 +89,7 @@
 		<article class="cf bg-light-gray">
 			<div class="fl w-50">
 				<article class="pa3 pa5-ns">
-					<h1 class="f2 f-subheadline-ns mb4 ttu">Glicko Multiplayer</h1>
+					<h1 class="f2 f-subheadline-ns mb4 ttu">Glicko Multi-player</h1>
 					<p class="measure lh-copy">
 						Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
 						tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
@@ -102,7 +106,7 @@
 			</div>
 			<div class="fl w-50">
 				<article class="pa3 pa5-ns">
-					<h1 class="f2 f-subheadline-ns mb4 ttu">Elo Multiplayer</h1>
+					<h1 class="f2 f-subheadline-ns mb4 ttu">Elo Multi-player</h1>
 					<p class="measure lh-copy">
 						Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
 						tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
@@ -119,6 +123,7 @@
 			</div>
 		</article>
 		<article class="pa3 pa5-ns">
+			<A NAME="contactor">
 			<h1 class="f2 f-subheadline-ns mb4 tr dark-gray ttu">
 				Contact
 			</h1>
