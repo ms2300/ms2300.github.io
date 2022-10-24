@@ -11,7 +11,7 @@
 <article>
   <header class="sans-serif">
     <div class="mw9 center pa4 pt5-ns ph7-l">
-      <time class="f6 mb2 dib ttu tracked"><small>27 July, 2015</small></time>
+      <time class="f6 mb2 dib ttu tracked"><small>October 2022</small></time>
       <h3 class="f2 f1-m f-headline-l measure-narrow lh-solid mv0">
         <span class="black pa1">
           Finding a Middle Ground: Python Testing Coverage
@@ -22,80 +22,58 @@
     </div>
   </header>
   <div class="pa4 ph7-l georgia mw9-l center">
-      <p class="f5 f3-ns measure georgia">
-      Introduction: "100% testing coverage in Python does not mean that testing is good,
-      however without 100% testing coverage the testing cannot be good"
+     <p class="f5 f3-ns measure georgia">
+        Let's consider a python codebase with 100% test coverage: now let's remove every assertion from the testing
+       suite so that all tests pass no matter what. Does that testing suite still have value?
+     </p>
+     <h1 class="5 f3-ns measure georgia">Python Tests are the Easiest Guarantee of Syntactical Correctness</h1>
 
-      Section: Considering codebase invariants that can / cannot be assumed
-      - Arg: What do tests actually test in an interpreted language / Python?
-         - Functionality
-         - It syntactically works
-         - The test works in the virtual environment provided
-         - Consider an example of changing a function signature called in 3 places
-         - Segue into branch vs line coverage
-      - Arg: Branch and line Coverage
+     <p class="f5 f3-ns measure georgia">
 
-
-      Section: Approaching a codebase as a living document
-      - Arg: Ignored sections of covered code
-         - Argument might work if code is not a living document
-         - Cannot assume that multiple diffs use the function in the exact same way for the
-         exact same purpose
-         - Give example of function being used differently for different diffs
-      - Arg: Minimum bars
-         - With no diff, minimum coverage will always trend towards minimum coverage requirement
-         - Diffs until the overall bar is reached cannot be assumed to have any coverage at all
-         - Diff requirements are good, but bring us back to original issue
-         - Add a graph
-
-      Section: Toil
-      - Arg: Initial quote _has_ to be correct as theory
-      - Arg: Are there scenarios where it's still not worth it?
-         - "Well it's still working after all this time..."
-         - "Well it doesn't matter and that's why we choose Python..."
-      - Arg: Avoiding mindless tests whenever possible
-         - Prefer migrations to writing tests for existing code
-         - Living document theory
-         - No need to maintain old code if deemed lack of confidence
-
-      Section: Conclusion
-      - Arg: Pay price of dynamically type language or just use types?
-         - No Types: Price in either lack of confidence or horde of tests
-         - Types: Always will take a migration (mypy vs actual language change)
-
-      </p>
-      <p class="f5 f3-ns measure georgia">
-        Notes:
-      </p>
-      <ul>
-         <li>
-            <p class="f5 f3-ns measure georgia">
-              The concept of testing pyramid was ignored for the entirety of this article as
-              the arguments presented about coverage should apply to any level of the pyramid regardless
-              of granularity.
-            </p>
-         </li>
-         <li>
-            <p class="f5 f3-ns measure georgia">
-              In practice there is quite a bit more to shipping reliable Python than simply "writing good tests".
-              Enforcing hermetic tests, providing sane developer virtual environments with unobtrusive debuggers, and
-              a well thought out release process will all do more to empower developers to easily avoid incidents before
-              they happen.
-            </p>
-         </li>
-      </ul>
-      <p class="f5 f3-ns lh-copy measure georgia">
-        In 1958 he published a piece in Venture proclaiming what he called "Sturgeon's Revelation"
-      </p>
-    <p class="f6 f5-ns lh-copy measure i pl4 bl bw1 b--gold mb4">
-      I repeat Sturgeon's Revelation, which was wrung out of me after twenty years of wearying defense of science fiction against attacks of people who used the worst examples of the field for ammunition, and whose conclusion was that ninety percent of SF is crud. Using the same standards that categorize 90% of science fiction as trash, crud, or crap, it can be argued that 90% of film, literature, consumer goods, etc. is crap. In other words, the claim (or fact) that 90% of science fiction is crap is ultimately uninformative, because science fiction conforms to the same trends of quality as all other artforms.
+        100% testing coverage in Python does not necessarily mean that you have written good tests,
+        however without 100% testing coverage it is impossible for you to write a truly good testing suite.
+   </p>
+   <h1 class="5 f3-ns measure georgia">100% Test Coverage is Reasonable in Practice</h1>
+   <p class="f5 f3-ns measure georgia">
+       Both unittest and pytest support enough mocking capabilities to hit every potential branch + line
+       in code. If tests are unable to reach certain scenarios in code that is either a sign the code
+       isn't written in a testable fashion or there is lack of knowledge around the mocking libraries.
+   </p>
+   <p class="f5 f3-ns measure georgia">
+       However, it is quite normal for bad tests to get merged: either due to deadlines, mistakes, or copy pasta.
+       Most of any bad stigma surrounding 100% testing coverage comes from maintaining poorly written tests.
+       An especially frequent example are tests that assert how functions implemented rather than what features do,
+       this commonly leads to nightmares when attempting standard refactors.
+   </p>
+   <h1 class="5 f3-ns measure georgia">When to Set Coverage Threshold < 100%</h1>
+   <p class="f5 f3-ns measure georgia">
+   The codebase you are working in currently does not have 100% coverage or the code you are shipping doesn't
+   need to always work. Adding tests for the sake of tests is a surefire way to create tests for the sake of tests, and not create tests of value.
+   Migrations and refactors are better ways to write solid tests with full coverage while accomplishing other functional goals along the way.
+   </p>
+   <p class="f5 f3-ns measure georgia">
+   Note: This is not an argument for ever setting diff coverage less than 100%. Scenarios in which developers
+   can merge code with no coverage easily can (and should) be avoided.
+   </p>
+    <p class="f5 f3-ns measure georgia">
+    Similar to GPA, whatever coverage percentage threshold we deem good enough is inevitably where our
+    coverage percentage will end up. And similar to many seniors in their final semester of college realizing
+    that D's get degrees - there is no guarantee that when current coverage is greater than coverage
+    threshold that any given diff will not have abysmal testing coverage.
     </p>
-    <p class="f5 f4-ns lh-copy measure mb4">
-    You don't have to bounce a tennis ball very far in San Francisco before it will hit two developers complaining about how many js tools/frameworks there are for development in 2015 and how much unneccessary complexity they add. Doing a search on twitter for 'too many js tools' or 'yet another js framework' returns... a lot of people lamenting the current state of affairs.
-  </p>
-
-    <p class="f5 f4-ns lh-copy measure">
-    This is most likely, the wrong conversation for us as a community, to be having. The presence of bad tools - shouldn't discourage us from wanting more tools or frameworks. There are more books published in a single day than I will ever be able to read in my lifetime. But this does not make me sad. Or overwhelm me. Mostly I think about how excited I am to read the best books that are being published. And this is where we should push the conversation. How do we build better tools? What does that look like?
-  </p>
+   <h1 class="5 f3-ns measure georgia">Closing Thoughts</h1>
+   <p class="f5 f3-ns measure georgia">
+     In practice there is quite a bit more to shipping reliable Python than simply "writing good tests".
+     Enforcing hermetic tests, providing sane developer virtual environments with unobtrusive debuggers, and
+     a well thought out release process are all incredibly important and shouldn't be ignored.
+   </p>
+   <p class="f5 f3-ns measure georgia">
+   And there is a middle ground when it comes to testing python. However this middle ground is only dependent
+   on the current state of the codebase and the functional purpose of the product. For most codebases the
+   choice to use python also comes with the tax of 100% testing coverage. Believing that total coverage for
+   business critical code doesn't need basic correctness checks is selling your product short,
+   believing that requiring total coverage will introduce bad tests is selling your testing standards short, and
+   believing that every line can't be reached without reductive effort is selling your code organization short.
+   </p>
   </div>
 </article>
