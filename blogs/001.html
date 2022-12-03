@@ -22,52 +22,52 @@
     </div>
   </header>
   <div class="pa4 ph7-l georgia mw9-l center">
-     <p class="f5 f3-ns measure georgia">
+     <p class="f4-ns measure georgia">
         Let's consider a python codebase with 100% test coverage: now let's remove every assertion from the testing
        suite so that all tests pass no matter what. Does that testing suite still have value?
      </p>
-     <h1 class="5 f3-ns measure georgia">Python Tests are the Easiest Guarantee of Syntactical Correctness</h1>
+     <h1 class="f4-ns measure georgia">Python Tests are the Easiest Guarantee of Syntactical Correctness</h1>
 
-     <p class="f5 f3-ns measure georgia">
+     <p class="f4-ns measure georgia">
 
         100% testing coverage in Python does not necessarily mean that you have written good tests,
         however without 100% testing coverage it is impossible for you to write a truly good testing suite.
    </p>
-   <h1 class="5 f3-ns measure georgia">100% Test Coverage is Reasonable in Practice</h1>
-   <p class="f5 f3-ns measure georgia">
+   <h1 class="f4-ns measure georgia">100% Test Coverage is Reasonable in Practice</h1>
+   <p class="f4-ns measure georgia">
        Both unittest and pytest support enough mocking capabilities to hit every potential branch + line
        in code. If tests are unable to reach certain scenarios in code that is either a sign the code
        isn't written in a testable fashion or there is lack of knowledge around the mocking libraries.
    </p>
-   <p class="f5 f3-ns measure georgia">
+   <p class="f4-ns measure georgia">
        However, it is quite normal for bad tests to get merged: either due to deadlines, mistakes, or copy pasta.
        Most of any bad stigma surrounding 100% testing coverage comes from maintaining poorly written tests.
        An especially frequent example are tests that assert how functions implemented rather than what features do,
        this commonly leads to nightmares when attempting standard refactors.
    </p>
-   <h1 class="5 f3-ns measure georgia">When to Set Coverage Threshold < 100%</h1>
-   <p class="f5 f3-ns measure georgia">
+   <h1 class="f4-ns measure georgia">When to Set Coverage Threshold < 100%</h1>
+   <p class="f4-ns measure georgia">
    The codebase you are working in currently does not have 100% coverage or the code you are shipping doesn't
    need to always work. Adding tests for the sake of tests is a surefire way to create tests for the sake of tests, and not create tests of value.
    Migrations and refactors are better ways to write solid tests with full coverage while accomplishing other functional goals along the way.
    </p>
-   <p class="f5 f3-ns measure georgia">
+   <p class="f4-ns measure georgia">
    Note: This is not an argument for ever setting diff coverage less than 100%. Scenarios in which developers
    can merge code with no coverage easily can (and should) be avoided.
    </p>
-    <p class="f5 f3-ns measure georgia">
+    <p class="f4-ns measure georgia">
     Similar to GPA, whatever coverage percentage threshold we deem good enough is inevitably where our
     coverage percentage will end up. And similar to many seniors in their final semester of college realizing
     that D's get degrees - there is no guarantee that when current coverage is greater than coverage
     threshold that any given diff will not have abysmal testing coverage.
     </p>
-   <h1 class="5 f3-ns measure georgia">Closing Thoughts</h1>
-   <p class="f5 f3-ns measure georgia">
+   <h1 class="f4-ns measure georgia">Closing Thoughts</h1>
+   <p class="f4-ns measure georgia">
      In practice there is quite a bit more to shipping reliable Python than simply "writing good tests".
      Enforcing hermetic tests, providing sane developer virtual environments with unobtrusive debuggers, and
      a well thought out release process are all incredibly important and shouldn't be ignored.
    </p>
-   <p class="f5 f3-ns measure georgia">
+   <p class="f4-ns measure georgia">
    And there is a middle ground when it comes to testing python. However this middle ground is only dependent
    on the current state of the codebase and the functional purpose of the product. For most codebases the
    choice to use python also comes with the tax of 100% testing coverage. Believing that total coverage for
