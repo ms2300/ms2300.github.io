@@ -37,18 +37,18 @@
    <p class="f4-ns measure georgia">
        Both unittest and pytest support enough mocking capabilities to hit every potential branch + line
        in code. If tests are unable to reach certain scenarios in code that is either a sign the code
-       isn't written in a testable fashion or there is lack of knowledge around the mocking libraries.
+       isn't written in a testable fashion.
    </p>
    <p class="f4-ns measure georgia">
        However, it is quite normal for bad tests to get merged: either due to deadlines, mistakes, or copy pasta.
-       Most of any bad stigma surrounding 100% testing coverage comes from maintaining poorly written tests.
+       Most bad stigma surrounding 100% testing coverage comes from maintaining poorly written tests.
        An especially frequent example are tests that assert how functions implemented rather than what features do,
        this commonly leads to nightmares when attempting standard refactors.
    </p>
    <h1 class="f4-ns measure georgia">When to Set Coverage Threshold < 100%</h1>
    <p class="f4-ns measure georgia">
    The codebase you are working in currently does not have 100% coverage or the code you are shipping doesn't
-   need to always work. Adding tests for the sake of tests is a surefire way to create tests for the sake of tests, and not create tests of value.
+   need to always work. Adding tests for the sake of tests is a surefire way to create tests of little value.
    Migrations and refactors are better ways to write solid tests with full coverage while accomplishing other functional goals along the way.
    </p>
    <p class="f4-ns measure georgia">
@@ -58,8 +58,8 @@
     <p class="f4-ns measure georgia">
     Similar to GPA, whatever coverage percentage threshold we deem good enough is inevitably where our
     coverage percentage will end up. And similar to many seniors in their final semester of college realizing
-    that D's get degrees - there is no guarantee that when current coverage is greater than coverage
-    threshold that any given diff will not have abysmal testing coverage.
+    that D's get degrees - there is no guarantee that when the current code coverage is greater than the code coverage
+    threshold that any given change will not have abysmal testing coverage.
     </p>
    <h1 class="f4-ns measure georgia">Closing Thoughts</h1>
    <p class="f4-ns measure georgia">
@@ -68,7 +68,10 @@
      a well thought out release process are all incredibly important and shouldn't be ignored.
    </p>
    <p class="f4-ns measure georgia">
-   And there is a middle ground when it comes to testing python. However this middle ground is only dependent
+   And there is a middle ground when it comes to testing python.
+   </p>
+	<p class="f4-ns measure georgia">
+   However this middle ground is only dependent
    on the current state of the codebase and the functional purpose of the product. For most codebases the
    choice to use python also comes with the tax of 100% testing coverage. Believing that total coverage for
    business critical code doesn't need basic correctness checks is selling your product short,
